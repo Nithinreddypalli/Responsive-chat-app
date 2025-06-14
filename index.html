@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-app">
+    <aside class="sidebar">
+      <div class="logo">💬 Chat</div>
+      <div class="contact-list" id="contact-list"></div>
+    </aside>
+
+    <main class="chat-area">
+      <div class="chat-header">
+        <div class="contact-info">
+          <div class="avatar" id="chat-avatar">👤</div>
+          <div>
+            <div class="name" id="chat-name">Select a contact</div>
+            <div class="status" id="chat-status"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="chat-messages" class="chat-messages"></div>
+
+      <div id="typing-indicator" class="typing-indicator" style="display: none;">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()" title="Send">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24" fill="#fff">
+                <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
+            </svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
